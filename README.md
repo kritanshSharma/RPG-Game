@@ -1,36 +1,62 @@
 ﻿# Haikyuu Volleyball Retro RPG 🏐
 
-A browser-based retro volleyball game inspired by Game Boy Advance aesthetics.
+A browser-based retro volleyball game inspired by Game Boy Advance aesthetics, built with React, TypeScript, and HTML5 Canvas.
 
 ## 📸 Gameplay Preview
 
-| Gym Training and Drills| Beach Match & Spiking |
+| Gym Training & Drills | Beach Match & Spiking |
 | :---: | :---: |
-| ![Gym Training](./drill-mode.png) | ![Beach Match](./match-mode.png) |
+| ![Gym Training & Drills](./drill-mode.png) | ![Beach Match & Spiking](./match-mode.png) |
 
 ---
 
-### What it is
+## 🛠️ Technologies Used
 
-A mini action-RPG volleyball match simulator with 8-bit sound effects and a retro handheld UI.
-
-- **Volleyball Mechanics**: Real-time positioning, jump timing, bumping, setting, and spiking.
-- **RPG Stats & Dialogue**: Character progression, dialogue prompts, and player stats for Hinata Shoyo.
-- **Retro Audio**: Built-in 8-bit synthesizer using the Web Audio API (no external audio assets needed).
-- **GBA Layout**: Handheld-style interface supporting both keyboard input and on-screen controls.
+- **Framework**: React 19, TypeScript, Vite
+- **Graphics & Rendering**: HTML5 Canvas API (2D game loop, ball trajectory, player sprites)
+- **Audio Engine**: Web Audio API (procedural 8-bit sound synthesis)
+- **Styling & UI**: Tailwind CSS, Custom GBA Console Bezel Layout
 
 ---
 
-### Tech Stack
+## ✨ Key Features
 
-- **Frontend**: React, TypeScript, Vite
-- **Graphics**: HTML5 2D Canvas
-- **Audio**: Web Audio API
-- **Styling**: Tailwind CSS
+- **Gym Training & Drills**: Practice positioning and reception timing on the indoor court.
+- **Volleyball Physics, Timing & Wind Mechanics**: Real-time ball arc physics, jump apex timing, and dynamic wind resistance affecting ball drift.
+- **RPG Stats & Dialogue System**: Live player stats (Speed, Reception Timing, Jump Altitude) and interactive match dialogue for Hinata Shoyo.
+- **Procedural 8-Bit Audio**: Sound effects generated dynamically via Web Audio API without external audio files.
+- **Hybrid Controls**: Support for both keyboard controls (WASD/Arrows, Spacebar, Z/X) and on-screen clickable GBA buttons.
 
 ---
 
-### Running locally and have fun
+## 🧠 The Process & Architecture
+
+1. **GBA Shell**: Built a modular React container (GBAFrame.tsx) replicating retro handheld consoles.
+2. **Canvas Game Loop**: Integrated an optimized equestAnimationFrame loop in VolleyballRenderer.ts, decoupling canvas rendering from React state.
+3. **Procedural Synthesizer**: Built AudioEngine.ts using oscillator nodes and gain envelopes for retro sound effects.
+4. **State Machine**: Structured volleyball phase transitions (Serve -> Receive -> Set -> Spike -> Score) using strict TypeScript interfaces.
+
+---
+
+## 📚 What I Learned
+
+- Managing high-frequency 2D Canvas rendering cycles in React without performance bottlenecks.
+- Simulating dynamic wind vectors and trajectory curves in a 2D game loop.
+- Procedural sound generation using native Web Audio oscillators.
+- Designing responsive, retro handheld user interfaces.
+
+---
+
+## 🚀 How It Can Be Improved
+
+- [ ] **Bug Hunting & Feedback**: There are some edge-case physics bugs that I as a developer am still trying to figure out — please play the game and let me know what you encounter!
+- [ ] **Multiplayer Support**: Add 2-player local or online matches using WebSockets.
+- [ ] **Roster & Special Moves**: Expand character selection (Kageyama, Tsukishima, Bokuto) with signature abilities.
+- [ ] **Persistent Backend**: Connect a database to store high scores and player progress.
+
+---
+
+## 💻 Running the Project Locally
 
 ``bash
 # 1. Clone repository
@@ -45,3 +71,5 @@ npm install
 # 4. Start dev server
 node .\node_modules\vite\bin\vite.js --port=3000
 ``
+
+Open your browser and navigate to http://localhost:3000.
