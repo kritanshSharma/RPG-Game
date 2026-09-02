@@ -4,7 +4,7 @@ A browser-based retro volleyball game inspired by Game Boy Advance aesthetics.
 
 ## 📸 Gameplay Preview
 
-| Gym Training | Beach Match & Spiking |
+| Gym Training and Drills| Beach Match & Spiking |
 | :---: | :---: |
 | ![Gym Training](./drill-mode.png) | ![Beach Match](./match-mode.png) |
 
