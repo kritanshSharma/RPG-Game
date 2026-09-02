@@ -32,7 +32,8 @@ A browser-based retro volleyball game inspired by Game Boy Advance aesthetics, b
 ## 🧠 The Process & Architecture
 
 1. **GBA Shell**: Built a modular React container (GBAFrame.tsx) replicating retro handheld consoles.
-2. **Canvas Game Loop**: Integrated an optimized equestAnimationFrame loop in VolleyballRenderer.ts, decoupling canvas rendering from React state.
+2. **Canvas Game Loop**: Integrated an optimized 
+equestAnimationFrame loop in VolleyballRenderer.ts, decoupling canvas rendering from React state.
 3. **Procedural Synthesizer**: Built AudioEngine.ts using oscillator nodes and gain envelopes for retro sound effects.
 4. **State Machine**: Structured volleyball phase transitions (Serve -> Receive -> Set -> Spike -> Score) using strict TypeScript interfaces.
 
@@ -49,7 +50,7 @@ A browser-based retro volleyball game inspired by Game Boy Advance aesthetics, b
 
 ## 🚀 How It Can Be Improved
 
-- [ ] **Bug Hunting & Feedback**: There are some edge-case physics bugs that I as a developer am still trying to figure out — please play the game and let me know what you encounter!
+- [ ] **Bug Hunting & Feedback**: There are some edge-case physics bugs that I as a developer am still trying to figure out so please play the game and let me know what you encounter.
 - [ ] **Multiplayer Support**: Add 2-player local or online matches using WebSockets.
 - [ ] **Roster & Special Moves**: Expand character selection (Kageyama, Tsukishima, Bokuto) with signature abilities.
 - [ ] **Persistent Backend**: Connect a database to store high scores and player progress.
