@@ -4,7 +4,7 @@ A browser-based retro volleyball game inspired by Game Boy Advance aesthetics.
 
 ## 📸 Gameplay Preview
 
-| Gym Training & Reception Drills | Beach Match & Spiking |
+| Gym Training | Beach Match & Spiking |
 | :---: | :---: |
 | ![Gym Training](./drill-mode.png) | ![Beach Match](./match-mode.png) |
 
@@ -30,7 +30,7 @@ A mini action-RPG volleyball match simulator with 8-bit sound effects and a retr
 
 ---
 
-### Running locally
+### Running locally and have fun
 
 ``bash
 # 1. Clone repository
